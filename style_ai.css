@@ -1,0 +1,463 @@
+/* ===================================================
+   1. STYLING UMUM & BODY
+   =================================================== */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+/* ===================================================
+   2. STYLING HEADER & JUDUL (Text Shadow & Border)
+   =================================================== */
+header {
+    background-color: #1e3a8a;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    border-bottom: 4px solid #3b82f6;
+}
+
+header h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* ===================================================
+   3. STYLING NAVIGASI (Text Decoration & Border)
+   =================================================== */
+nav {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #1e3a8a;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #2563eb;
+}
+
+/* ===================================================
+   4. STYLING KONTEN UTAMA (Class Selector & Border)
+   =================================================== */
+main {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+}
+
+.deskripsi-sistem {
+    font-size: 15px;
+    text-align: justify;
+    color: #4b5563;
+    letter-spacing: 0.5px;
+}
+
+/* ===================================================
+   5. STYLING FOOTER
+   =================================================== */
+footer {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px;
+    color: #6b7280;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 10px;
+}
+
+/* ===================================================
+   6. STYLING FORM & INPUT (unggah_jawaban.html)
+   =================================================== */
+.form-container {
+    background-color: #ffffff;
+    border: 2px solid #3b82f6;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: #1f2937;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+/* Class Selector untuk Kolom Isian Form */
+.input-control {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #9ca3af;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* ID Selector khusus Tombol Utama */
+#btn-submit {
+    background-color: #16a34a;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#btn-submit:hover {
+    background-color: #15803d;
+}
+
+.table-container {
+    margin-top: 15px;
+    overflow-x: auto;
+}
+
+/* Styling Elemen Tabel Utama */
+table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+}
+
+/* Grouping Selector untuk Header dan Sel Tabel */
+table.data-table th, 
+table.data-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* Styling Header Tabel (Text Formatting & Background) */
+table.data-table thead tr {
+    background-color: #1e3a8a;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+/* Warna Selang-Seling Baris Tabel (Background) */
+table.data-table tbody tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+
+table.data-table tbody tr:hover {
+    background-color: #f3f4f6;
+}
+
+/* Class Selector untuk Lencana Nilai (Border & Rounded) */
+.nilai-badge {
+    font-weight: bold;
+    color: #15803d;
+    background-color: #dcfce7;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid #86efac;
+}
+
+/* style_ai.css - Flexbox Enhancement */
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+#btn-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #16a34a;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#btn-submit:hover {
+    background-color: #15803d;
+}
+
+
+/* Implementation of CSS Flexbox for Form Centering */
+.form-container {
+    background-color: #ffffff;
+    border: 2px solid #3b82f6;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 500px;
+    margin: 20px auto;
+
+    /* Penerapan CSS Flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end ;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+/* Implementation of CSS Grid for Dashboard Layout */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 220px auto; /* Sidebar 220px, Main Konten otomatis */
+    gap: 20px;
+}
+
+.dashboard-grid header, 
+.dashboard-grid footer {
+    grid-column: 1 / 3; /* Membentang dari kolom 1 hingga 3 */
+}
+
+aside {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+}
+
+aside a {
+    display: block;
+    color: #1e3a8a;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* Grid Kartu Statistik Dashboard */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.stat-card {
+    background-color: #eff6ff;
+    border-left: 4px solid #3b82f6;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.stat-card h4 {
+    margin: 0;
+    color: #1e3a8a;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stat-card p {
+    margin: 5px 0 0 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+/* Implementation of CSS Flexbox for Form Centering */
+.form-container {
+    background-color: #ffffff;
+    border: 2px solid #3b82f6;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 500px;
+    margin: 20px auto;
+
+    /* Penerapan CSS Flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+/* Implementation of CSS Grid for Dashboard Layout */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 220px auto; /* Sidebar 220px, Main Konten otomatis */
+    gap: 20px;
+}
+
+.dashboard-grid header, 
+.dashboard-grid footer {
+    grid-column: 1 / 3; /* Membentang dari kolom 1 hingga 3 */
+}
+
+aside {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+}
+
+aside a {
+    display: block;
+    color: #1e3a8a;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+/* style_ai.css - Flexbox Enhancement */
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#btn-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #16a34a;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#btn-submit:hover {
+    background-color: #15803d;
+}
+/* Grid Kartu Statistik Dashboard */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.stat-card {
+    background-color: #eff6ff;
+    border-left: 4px solid #3b82f6;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.stat-card h4 {
+    margin: 0;
+    color: #1e3a8a;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stat-card p {
+    margin: 5px 0 0 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+/* Tambahan CSS pendukung komponen JS & Halaman Baru */
+.progress-box {
+    margin-top: 15px;
+    background: #e9ecef;
+    border-radius: 6px;
+    overflow: hidden;
+    height: 20px;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #28a745;
+    transition: width 0.4s ease;
+}
+
+.status-info {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.badge-nilai {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #fff;
+}
+.grade-A { background-color: #28a745; }
+.grade-B { background-color: #17a2b8; }
+.grade-C { background-color: #ffc107; color: #333; }
+.grade-D { background-color: #fd7e14; }
+.grade-E { background-color: #dc3545; }
+
+.status-badge {
+    padding: 3px 7px;
+    border-radius: 12px;
+    font-size: 0.85em;
+}
+.status-terkoreksi { background-color: #d4edda; color: #155724; }
+.status-perlureview { background-color: #f8d7da; color: #721c24; }
+
+.btn-sm {
+    padding: 4px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85em;
+}
+.btn-detail { background-color: #007bff; color: white; }
+.btn-hapus { background-color: #dc3545; color: white; margin-left: 3px; }
+
+.search-box {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
